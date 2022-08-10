@@ -3,16 +3,16 @@ import { Form, Button } from "react-bootstrap";
 
 function EditUserForm(props) {
 	const [name, setName] = useState(props.userBio.name);
-	const [number, setGen] = useState(props.userBio.number);
-	const [location, setEmail] = useState(props.userBio.location);
+	const [number, setNumber] = useState(props.userBio.number);
+	const [location, setLocation] = useState(props.userBio.location);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		props.editUser(props.userBio.id, { name, number, location });
 
 		setName("");
-		setGen("");
-		setEmail("");
+		setNumber("");
+		setLocation("");
 	};
 	return (
 		<div>
@@ -30,11 +30,11 @@ function EditUserForm(props) {
 				<Form.Group className="mb-3" controlId="formBasicEmail">
 					<Form.Label>Phone number</Form.Label>
 					<Form.Control
-						type="email"
+						type="text"
 						placeholder="Enter number"
 						value={number}
 						onChange={(e) => {
-							setEmail(e.target.value);
+							setNumber(e.target.value);
 						}}
 					/>
 				</Form.Group>
@@ -46,7 +46,7 @@ function EditUserForm(props) {
 						placeholder="location"
 						value={location}
 						onChange={(e) => {
-							setGen(e.target.value);
+							setLocation(e.target.value);
 						}}
 					/>
 				</Form.Group>

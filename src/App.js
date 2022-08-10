@@ -7,21 +7,21 @@ import AddUserForm from "./components/AddUserForm";
 function App() {
   const [users, setUsers] = useState([
     {
-      name: "Dela",
+      name: " Dela",
       number: 5,
-      location: "dela@email.com",
+      location: " Danfa",
       id: "787y887chukjchho3fw",
     },
     {
-      name: "Ernest",
+      name: " Ernest",
       number: 21,
-      location: "ernest@email .com",
+      location: "Danfa",
       id: "bvkhjvhvjih939u494",
     },
     {
-      name: "NanaAwoa",
+      name: " NanaAwoa",
       number: 18,
-      location: "adwoa@email .com",
+      location: "Danfa",
       id: "hhuchieih939u4654",
     },
   ]);

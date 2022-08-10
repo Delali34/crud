@@ -25,8 +25,8 @@ function User(props) {
 				<Card>
 					<Card.Body>
 						<Card.Title>Name:{props.userBio.name}</Card.Title>
-						<Card.Subtitle className="mb-2 text-muted">
-							number:{props.userBio.number}
+						<Card.Subtitle className="mb-2 ">
+							Phone Number:{props.userBio.number}
 						</Card.Subtitle>
 						<Card.Text>location:{props.userBio.location}</Card.Text>
 						<Button href="#" size="sm" variant="primary" onClick={handleShow}>
